@@ -4,7 +4,9 @@ The Project Tidy Data was created from underlying data from the UCI Machine lear
 The information about the underlying data from which the tidy dataset was created is given at the latter half of this codebook.
 
 This process of creating the Tidy dataset from the underlying dataset is as follows:
+
 My analysis file first creates a directory for the files from the UCI Machine learning repository, then downloads the files to that directory.
+
 Next, I unzip the file and readin the relevant data files
 
 I then stack the test and train versions of the Subject, X (features) and Y (activity) datasets together.
