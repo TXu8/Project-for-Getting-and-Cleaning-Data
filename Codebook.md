@@ -1,7 +1,24 @@
 # Codebook for Project Tidy Data
 
-# The Project Tidy Data was created from the 
+# The Project Tidy Data was created from underlying data from the UCI Machine learning repository. 
 # The information about the underlying data from which the tidy dataset was created is given at the latter half of this codebook.
+
+# This process of creating the Tidy dataset from the underlying dataset is as follows:
+Next, I unzip the file and readin the relevant data files
+
+I then stack the test and train versions of the Subject, X (features) and Y (activity) datasets together.
+
+Next, I assign names to these datasets, before combining the Subject, features and activity datasets. I use the names
+
+from features.txt to name the fields in the features dataset.
+
+I then subset a dataset with only the fields with mean() and std() in the field name, as well as the Subject and Activity fields.
+
+I can then merge on the Activity labels on the Activity field using the activity_labels.txt dataset.
+
+I then rename the field names so that they are more descriptive.
+
+Finally, I create a tidy dataset of the average of each variable for each activity and each subject
 
 # For the tidy dataset only the means by subject and Activity of the mean and standard deviation fields from the original
 # dataset were kept. This resulted in a dataset
